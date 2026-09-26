@@ -21,13 +21,10 @@ function onSubmit(event) {
         return;
     }
 
-    const submitData = {};
-    
-    [...form.elements].forEach(element => {
-        if (element.name) {
-            submitData[element.name] = element.value;
-        }
-    });
+    const submitData = {
+        email: form.email.value.trim(),
+        password: form.password.value.trim()
+    };
 
     refs.loginForm.reset()
 

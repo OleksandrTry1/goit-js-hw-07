@@ -32,7 +32,7 @@ const images = [
 
 function formatImages(images) {
     const formattedImages = images.map(image => {
-        return `<img src='${image.url}' alt='${image.alt}'>`
+        return `<li class='gallery-item'><img src='${image.url}' alt='${image.alt}'></li>`
     }).join('')
     return formattedImages
 }
