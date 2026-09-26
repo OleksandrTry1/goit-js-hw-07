@@ -1,0 +1,16 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 645px;
+}
+
+img {
+    display: flex;
+    overflow: hidden;
+    object-fit: cover;
+    box-sizing: content-box;
+    width: 320px;
+    height: 320px;
+    border-radius: 5px;
+}
